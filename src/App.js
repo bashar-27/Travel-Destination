@@ -1,16 +1,25 @@
 
 import './App.css';
 import Home from './Component/Home/Home';
-import Database from './Component/Data/db.json';
+import TourDetails from './Component/TourDetails/TourDetails';
+import dataJson from './Component/Data/db.json';
+import { Routes,Route } from 'react-router-dom';
+import Header from './Component/Header/Header';
+import { useState } from 'react';
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header className="App-header"/>
+      <Routes>
+  
+        <Route path='/' element={<Home data ={dataJson}/>}/>
+        <Route path="city/:id"   element={<TourDetails  data ={dataJson}/>}/> 
+        
+
+     </Routes>
       
-      <Home data ={Database}/>
-     
-      </header>
     </div>
   );
 }
