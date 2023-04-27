@@ -10,18 +10,20 @@ function TourDetails(props) {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <>
+    <div className='det'>
       {props.data
         .filter((item) => item.id === param.id)
         .map((item) => (
           <div id="Details">
+            <img src={item.image}/>
+            <h2>{item.name}</h2>
             {showMore ? item.info : item.info.substring(0, 250)}
-            <Button onClick={() => setShowMore(!showMore)}>
+            <Button className='btn' onClick={() => setShowMore(!showMore)}>
               {showMore ? 'Show Less' : 'Show More'}
             </Button>
           </div>
         ))}
-    </>
+    </div>
   );
 }
 

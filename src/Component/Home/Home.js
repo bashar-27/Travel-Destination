@@ -11,7 +11,7 @@ function Home(props){
        <Navbar/>
       
        <Tour dataTour={props.data}/>
-       <Footer/>
+       {/* <Footer/> */}
         </>
 
     )
