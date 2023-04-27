@@ -1,6 +1,6 @@
 #footer{
     display: flex;
-    background-color: #ffffffc4;
+    background-color: #000000c4;
     width: 100%;
     justify-content: center;
     margin-top: 50px;
@@ -10,6 +10,7 @@
 a{
     text-decoration: none;
     color: inherit;
+ 
 }
 ul{
     display: flex;
@@ -21,11 +22,8 @@ ul{
 ul li {
     list-style-type: none;
     font-size: medium;
+    color: #494949;
 }
 li:hover{
-    color: blanchedalmond;
-}
-img{
-   width: 50px;
-  
+    color: rgb(241, 237, 231);
 }

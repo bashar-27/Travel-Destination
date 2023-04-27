@@ -1,5 +1,7 @@
 
 import './App.css';
+import Footer from './Component/Footer/Footer';
+
 import Home from './Component/Home/Home';
 import TourDetails from './Component/TourDetails/TourDetails';
 import dataJson from './Component/Data/db.json';
@@ -19,7 +21,7 @@ function App() {
         
 
      </Routes>
-      
+     <Footer/>
     </div>
   );
 }
